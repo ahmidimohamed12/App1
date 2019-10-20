@@ -23,6 +23,7 @@
                     FontAttributes="Bold"
                       TextColor="White"
                 />
+            <ScrollView Orientation="Vertical">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -30,36 +31,169 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                    <RowDefinition Height="90" />
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition  Height="25"/>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition
+                            Height="25"
+                            />
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition  Height="90"/>
+                        <RowDefinition
+                            Height="25"
+                            />
+                    </Grid.RowDefinitions>
                 
                 <Image Source="pz1.png" x:Name="im1" Grid.Column="0" Grid.Row="0" />
+                    <StackLayout Orientation="Horizontal"  Grid.Column="0" Grid.Row="1">
+                        <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="Pizza"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                    </StackLayout>
+                    
+
+                    <Image Source="brg1.png" x:Name="im2" Grid.Column="2" Grid.Row="0"/>
+                    <StackLayout Orientation="Horizontal" Grid.Column="2" 
+                        Grid.Row="1" >
+                         <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Burger"
+                        />
+                    </StackLayout>   
                
-                
-                <Image Source="brg1" x:Name="im2" Grid.Column="2" Grid.Row="0"/>
-               
-                
-                <Image Source="sld1.png" x:Name="im3" Grid.Column="0" Grid.Row="1"/>
+                    <Image Source="sld1.png" x:Name="im3" Grid.Column="0" Grid.Row="2"/>
+                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="3"  >
+                          <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Salde"
+                       
+                        />
+                    </StackLayout>   
               
-                
-                <Image Source="pnn1.png" x:Name="im4" Grid.Column="2" Grid.Row="1"/>
+
+                    <Image Source="pnn1.png" x:Name="im4" Grid.Column="2" Grid.Row="2"/>
+                    <StackLayout  Orientation="Horizontal"    Grid.Column="2"   Grid.Row="3" >
+                            <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                      HorizontalOptions="CenterAndExpand"
+                        Text="Panini"
+                     
+                        />
+                    </StackLayout>  
+            
+                    <Image Source="ptt1.png" x:Name="im5" Grid.Column="0" Grid.Row="4"/>
+                    <StackLayout  Orientation="Horizontal" Grid.Row="5"   Grid.Column="0" >
+                         <Label 
+                        TextColor="White"
+                        FontAttributes="Bold"
+                      HorizontalOptions="CenterAndExpand"
+                        Text="Pate"
+                       
+                        />
+                    </StackLayout> 
                
-                
-                <Image Source="ptt1.png" x:Name="im5" Grid.Column="0" Grid.Row="2"/>
+                    <Image Source="tcs1.png" x:Name="im6" Grid.Column="2" Grid.Row="4"/>
+                    <StackLayout Orientation="Horizontal" 
+                        Grid.Column="2"  Grid.Row="5">
+                        <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="Tacos"
+                            HorizontalOptions="CenterAndExpand"
+                        />
+                    </StackLayout>  
+               
+                    <Image Source="ch1.png" x:Name="im7" Grid.Column="0" Grid.Row="6"/>
+                    <StackLayout Orientation="Horizontal" 
+                        Grid.Row="7"  Grid.Column="0">
+                          <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                        Text="Chicken"
+                        />
+                    </StackLayout>  
               
-                <Image Source="tcs1.png" x:Name="im6" Grid.Column="2" Grid.Row="2"/>
-               
-                <Image Source="ch1.png" x:Name="im7" Grid.Column="0" Grid.Row="3"/>
+                    <Image Source="wr1.png" x:Name="im8" Grid.Column="2" Grid.Row="6"/>
+                    <StackLayout Orientation="Horizontal"  
+                        Grid.Column="2"  Grid.Row="7" >
+                        <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="Shawarma"
+                     HorizontalOptions="CenterAndExpand"
+                        />
+                    </StackLayout>  
                 
-                <Image Source="wr1.png" x:Name="im8" Grid.Column="2" Grid.Row="3"/>
+                    <Image Source="gl1.png" x:Name="im9" Grid.Column="0" Grid.Row="8"/>
+                    <StackLayout Orientation="Horizontal" 
+                        Grid.Column="0"  Grid.Row="9" >
+                        <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Text="Glace"
+                       HorizontalOptions="CenterAndExpand"
+                        />
+                    </StackLayout>   
                 
-            </Grid>
+                    <Image Source="ds1.png" x:Name="im10" Grid.Column="2" Grid.Row="8"  />
+
+                    <StackLayout  Orientation="Horizontal"  Grid.Column="2" Grid.Row="9">
+                         <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                        Text="Dessert"
+                        
+                        />
+                    </StackLayout>
+
+                
+                
+                
+                    <Image Source="ds1.png" x:Name="im11" Grid.Column="0" Grid.Row="10"  />
+
+                    <StackLayout  Orientation="Horizontal"  Grid.Column="0" Grid.Row="11">
+                        <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                        Text="Jus"
+                        
+                        />
+                    </StackLayout>
+                    <Image Source="ds1.png" x:Name="im12" Grid.Column="2" Grid.Row="10"  />
+
+                    <StackLayout  Orientation="Horizontal"  Grid.Column="2" Grid.Row="11">
+                        <Label
+                        TextColor="White"
+                        FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                        Text="Dessert"
+                        
+                        />
+                    </StackLayout>
+
+
+                </Grid>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

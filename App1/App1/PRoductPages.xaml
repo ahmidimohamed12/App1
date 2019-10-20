@@ -276,8 +276,10 @@
             <Button
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="EndAndExpand"
-                Text=""
+                Text="طلبات"
                 x:Name="btnpl"
+                CornerRadius="20"
+                WidthRequest="290"
                 BackgroundColor="Orange"
                 TextColor="Black"
                 />

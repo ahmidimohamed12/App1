@@ -12,11 +12,58 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PRoductPages : ContentPage
     {
+        int bt = 0;
+        
         public PRoductPages()
         {
             InitializeComponent();
             if(MainPage.n1 == 1)
             {
+                if(menustar.tpizza == 1)
+                {
+
+                }
+                if(menustar.tburger == 1)
+                {
+
+                }
+                if(menustar.tsalad == 1)
+                {
+
+                }
+                if(menustar.tpanini==1)
+                {
+
+                }
+                if(menustar.tpate==1)
+                {
+
+
+                }
+                if(menustar.ttacos  == 1)
+                {
+
+                }
+                if(menustar.tchicken == 1)
+                {
+
+                }
+                if(menustar.tglace == 1)
+                {
+
+                }
+                if(menustar.tdessert == 1)
+                {
+
+                }
+                if(menustar.tdessert == 1)
+                {
+
+                }
+                if(menustar.tjus == 1)
+                {
+
+                }
                 im1.Source = ImageSource.FromFile("");
                 im2.Source = ImageSource.FromFile("");
                 im3.Source = ImageSource.FromFile("");
@@ -297,13 +344,26 @@ namespace App1
                 m13.Text = "";
                 m14.Text = "";
             }
+            btnpl.Clicked += btn_val;
+            
         }
-
+        private async void btn_val(object sender,EventArgs e)
+        {
+           await Navigation.PushModalAsync(new Formclie());
+        }
         private void Guest(Image im,EventHandler e)
         {
             var n = new TapGestureRecognizer();
             n.Tapped += e;
             im.GestureRecognizers.Add(n);
         }
+
+        private void im1_click(object sender,EventArgs e)
+        {
+            bt++;
+            btnpl.Text += bt;
+
+        }
+    
     }
 }
