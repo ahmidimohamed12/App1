@@ -17,7 +17,12 @@
                 WidthRequest="170"
                 HeightRequest="70"
                 />
-
+            <Label
+                Text=""
+                HorizontalOptions="CenterAndExpand"
+                    FontAttributes="Bold"
+                      TextColor="White"
+                />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
