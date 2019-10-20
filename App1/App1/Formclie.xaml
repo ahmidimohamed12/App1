@@ -9,15 +9,39 @@
              x:Class="App1.Formclie">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <ic:IconEntry/>
-            <ic:IconEntry/>
-            <ic:IconEntry/>
+            <StackLayout Orientation="Horizontal">
+                <Image
+                    HorizontalOptions="CenterAndExpand"
+                    
+                    />
+            </StackLayout>
+            <BoxView
+                HeightRequest="15"
+                />
+            <ic:IconEntry TextColor="White"  WidthRequest="200" Placeholder="الإسم الكامل" HorizontalOptions="CenterAndExpand" PlaceholderColor="White" x:Name="nom" />
+            <BoxView
+                HeightRequest="30"
+                />
+            <ic:IconEntry  TextColor="White" WidthRequest="200" Placeholder="رقم الهاتف" HorizontalOptions="CenterAndExpand"  x:Name="numtele" PlaceholderColor="White"/>
+            <BoxView
+                HeightRequest="30"
+                />
+            <ic:IconEntry WidthRequest="200"
+                          PlaceholderColor="White"
+                          Placeholder="العنوان"
+                          x:Name="add"
+                          TextColor="White"
+                          HorizontalOptions="CenterAndExpand"
+                          />
             
 
             <Button
-                Text=""
+                Text="إرسال"
                 BackgroundColor="Orange"
                 TextColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                x:Name="bt"
+                WidthRequest="280"
                 CornerRadius="20"
                 />
         </StackLayout>
