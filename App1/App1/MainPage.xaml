@@ -30,12 +30,10 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Image Grid.Row="0"  Grid.Column="0" Source="nt1.png"/>
-                    <Image Grid.Row="1"  Grid.Column="0" Source="nt2.png"/>
-                    <Image Grid.Row="2"  Grid.Column="0" Source="nt3.png"/>
-                    <Image Grid.Row="3"  Grid.Column="0" Source="nt4.png"/>
-                    <Image Grid.Row="4"  Grid.Column="0" Source="restu5.png"/>
-                    <Image Grid.Row="5"  Grid.Column="0" Source="restu6.png"/>
+                    <Image Grid.Row="0" x:Name="im1"  Grid.Column="0" Source="nt1.png"/>
+                    <Image Grid.Row="1"  x:Name="im2" Grid.Column="0" Source="nt2.png"/>
+                    <Image Grid.Row="2" x:Name="im3"  Grid.Column="0" Source="nt3.png"/>
+                    <Image Grid.Row="3"  x:Name="im4" Grid.Column="0" Source="nt4.png"/>
                 </Grid>
             </ScrollView>
         </StackLayout>

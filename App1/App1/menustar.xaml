@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             BackgroundColor="Black"
+             mc:Ignorable="d"
+             x:Class="App1.menustar">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+           <StackLayout Orientation="Horizontal">
+                <Image/>
+            </StackLayout>
+            <Image
+                Source="pin.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="170"
+                HeightRequest="70"
+                />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Image Source="pz1.png" x:Name="im1" Grid.Column="0" Grid.Row="0" />
+               
+                
+                <Image Source="brg1" x:Name="im2" Grid.Column="2" Grid.Row="0"/>
+               
+                
+                <Image Source="sld1.png" x:Name="im3" Grid.Column="0" Grid.Row="1"/>
+              
+                
+                <Image Source="pnn1.png" x:Name="im4" Grid.Column="2" Grid.Row="1"/>
+               
+                
+                <Image Source="ptt1.png" x:Name="im5" Grid.Column="0" Grid.Row="2"/>
+              
+                <Image Source="tcs1.png" x:Name="im6" Grid.Column="2" Grid.Row="2"/>
+               
+                <Image Source="ch1.png" x:Name="im7" Grid.Column="0" Grid.Row="3"/>
+                
+                <Image Source="wr1.png" x:Name="im8" Grid.Column="2" Grid.Row="3"/>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -16,6 +16,18 @@ namespace App1
         public MainPage()
         {
             InitializeComponent();
+            guest(im1, im1_click);
+        }
+
+        private void guest(Image im,EventHandler l)
+        {
+            var n = new TapGestureRecognizer();
+            n.Tapped += l;
+            im.GestureRecognizers.Add(n);
+        }
+        private  void im1_click(object sender,EventArgs e)
+        {
+            Navigation.PushModalAsync(new menustar());
         }
     }
 }
