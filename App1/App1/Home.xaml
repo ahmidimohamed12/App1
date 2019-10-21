@@ -11,8 +11,7 @@
             <Image
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
-                Source="GER2.png"
-                
+                Source="dl.png"
                 />
         </StackLayout>
     </ContentPage.Content>

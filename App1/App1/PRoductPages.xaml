@@ -41,33 +41,29 @@
                         <RowDefinition Height="20"/>
                     </Grid.RowDefinitions>
                     <Image x:Name="im1" Source="pz1.png" Grid.Column="0" Grid.Row="0" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                         <Label
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
-                        x:Name="pr1"
+                                         x:Name="pr1"
                         FontAttributes="Bold"
                         />
                         <Label
                         FontAttributes="Bold"
                         TextColor="White"
                         x:Name="m1"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
 
 
                     <Image Grid.Column="2" Grid.Row="0" x:Name="im2" Source="pz2.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="1">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="1">
                         <Label
                          x:Name="pr2"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m2"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -75,9 +71,8 @@
 
 
                     <Image x:Name="im3" Source="pz3.png" Grid.Column="0" Grid.Row="2" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
                         <Label
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                          x:Name="pr3"
@@ -86,31 +81,27 @@
                         x:Name="m3"
                         FontAttributes="Bold"
                         TextColor="White"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
 
                     <Image Grid.Column="2" Grid.Row="2" x:Name="im4" Source="pz4.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="3">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="3">
                         <Label
                         x:Name="pr4"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m4"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                     </StackLayout>
 
                     <Image x:Name="im5" Source="pz5.png" Grid.Column="0" Grid.Row="4" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
                         <Label
                         x:Name="pr5"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -118,21 +109,18 @@
                         x:Name="m5"
                         FontAttributes="Bold"
                         TextColor="White"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
 
                     <Image Grid.Column="2" Grid.Row="4" x:Name="im6" Source="pz6.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="5">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="5">
                         <Label
                         x:Name="pr6"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m6"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -140,10 +128,9 @@
 
 
                     <Image x:Name="im7" Source="pz7.png" Grid.Column="0" Grid.Row="6" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="7">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="7">
                         <Label
                         x:Name="pr7"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -151,21 +138,18 @@
                         x:Name="m7"
                         FontAttributes="Bold"
                         TextColor="White"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
 
                     <Image Grid.Column="2" Grid.Row="6" x:Name="im8" Source="pz8.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="7">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="7">
                         <Label
                         x:Name="pr8"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m8"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -173,10 +157,9 @@
 
 
                     <Image x:Name="im9" Source="pz9.png" Grid.Column="0" Grid.Row="8" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="9">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="9">
                         <Label
                         x:Name="pr9"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -184,30 +167,26 @@
                         x:Name="m9"
                         FontAttributes="Bold"
                         TextColor="White"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
 
                     <Image Grid.Column="2" Grid.Row="8" x:Name="im10" Source="pz10.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="9">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="9">
                         <Label
                         x:Name="pr10"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m10"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                     </StackLayout>
                     <Image x:Name="im11" Source="pz1.png" Grid.Column="0" Grid.Row="10" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="11">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="11">
                         <Label
                         x:Name="pr11"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -215,29 +194,26 @@
                         x:Name="m11"
                         FontAttributes="Bold"
                         TextColor="White"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
                     <Image Grid.Column="2" Grid.Row="10" x:Name="im12" Source="pz2.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="11">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="11">
                         <Label
                         x:Name="pr12"
-                        HorizontalOptions="CenterAndExpand"
+                     
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m12"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                     </StackLayout>
                     <Image x:Name="im13" Source="pz1.png" Grid.Column="0" Grid.Row="12" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="13">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="0" Grid.Row="13">
                         <Label
                         x:Name="pr13"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
@@ -245,21 +221,18 @@
                         x:Name="m13"
                         FontAttributes="Bold"
                         TextColor="White"
-                        HorizontalOptions="CenterAndExpand"
                         />
                     </StackLayout>
 
                     <Image Grid.Column="2" Grid.Row="12" x:Name="im14" Source="pz2.png" />
-                    <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="13">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Grid.Column="2" Grid.Row="13">
                         <Label
                         x:Name="pr14"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />
                         <Label
                         x:Name="m14"
-                        HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         FontAttributes="Bold"
                         />

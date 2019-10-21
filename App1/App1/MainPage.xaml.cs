@@ -20,6 +20,7 @@ namespace App1
             InitializeComponent();
             guest(im1, im1_click);
             guest(im2, im2_click);
+            guest(im3, im3_click);
         }
 
         private void guest(Image im,EventHandler l)
@@ -48,7 +49,7 @@ namespace App1
             n4 = 0;
             n5 = 0;
             n6 = 0;
-            namerst = "skyfood";
+            namerst = "Torino Food";
             await Navigation.PushModalAsync(new menustar());
         }
         private async void im3_click(object sender,EventArgs e)
@@ -59,7 +60,7 @@ namespace App1
             n4 = 0;
             n5 = 0;
             n6 = 0;
-            namerst = "skyfood";
+            namerst = "Pizza Idriss";
             await Navigation.PushModalAsync(new menustar());
         }
         private async void im4_click(object sender,EventArgs e)

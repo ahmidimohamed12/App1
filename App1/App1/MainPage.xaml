@@ -11,12 +11,12 @@
         <!-- Place new controls here -->
         <StackLayout>
             <StackLayout>
-                <Image
-                    HeightRequest="40"
-                    WidthRequest="40"
-                    
-                    />
-                
+                <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
             </StackLayout>
             <ScrollView>
                 <Grid>
