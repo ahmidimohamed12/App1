@@ -20,7 +20,6 @@ namespace App1
         public menustar()
         {
             InitializeComponent();
-            MainPage.n1 = 0;
             //if(MainPage.n1 == 1)
             //{
             //    im1.Source = ImageSource.FromFile("brg1.png");
@@ -105,21 +104,49 @@ namespace App1
         }
         private async void im1_click(object sender,EventArgs e)
         {
-          
-
-                await firebase
-                  .Child("Resturant")
-                  .PostAsync(new Resturants() { id=1,name="amal" });
-            
-            //await   Navigation.PushModalAsync(new PRoductPages());
+            //await firebase
+            //  .Child("Resturant")
+            //  .PostAsync(new Resturants() { id=0,name=MainPage.namerst, cmd=,total });
+            tpizza = 1;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 0;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
+           await  Navigation.PushModalAsync(new PRoductPages());
         }
     private async void im2_click(object sender,EventArgs e)
         {
+          
+            tpizza = 0;
+            tburger = 1;
+            tglace = 0;
+            tsalad = 0;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
             await Navigation.PushModalAsync(new PRoductPages());
         }
         private async void im3_click(object sender,EventArgs e)
         {
-           await  Navigation.PushModalAsync(new PRoductPages());
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
+            await  Navigation.PushModalAsync(new PRoductPages());
         }
         private async void  im4_click(object sender,EventArgs e)
         {

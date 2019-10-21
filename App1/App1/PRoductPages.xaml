@@ -18,24 +18,24 @@
                 </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="80" />
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="20"/>
                     </Grid.RowDefinitions>
                     <Image x:Name="im1" Source="pz1.png" Grid.Column="0" Grid.Row="0" />
-                <StackLayout Grid.Column="0" Grid.Row="1">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                     <Label
                         HorizontalOptions="CenterAndExpand"
                         TextColor="White"
@@ -52,7 +52,7 @@
 
                 
                 <Image Grid.Column="2" Grid.Row="0" x:Name="im2" Source="pz2.png" />
-                <StackLayout Grid.Column="2" Grid.Row="1">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="1">
                     <Label
                          x:Name="pr2"
                         HorizontalOptions="CenterAndExpand"
@@ -69,7 +69,7 @@
 
                 
                 <Image x:Name="im3" Source="pz3.png" Grid.Column="0" Grid.Row="2" />
-                <StackLayout Grid.Column="0" Grid.Row="3">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
                     <Label
                         HorizontalOptions="CenterAndExpand"
                         TextColor="White"
@@ -85,7 +85,7 @@
                 </StackLayout>
 
                 <Image Grid.Column="2" Grid.Row="2" x:Name="im4" Source="pz4.png" />
-                <StackLayout Grid.Column="2" Grid.Row="3">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="3">
                     <Label
                         x:Name="pr4"
                         HorizontalOptions="CenterAndExpand"
@@ -101,7 +101,7 @@
                 </StackLayout>
 
                 <Image x:Name="im5" Source="pz5.png" Grid.Column="0" Grid.Row="4" />
-                <StackLayout Grid.Column="0" Grid.Row="5">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
                     <Label
                         x:Name="pr5"
                         HorizontalOptions="CenterAndExpand"
@@ -117,7 +117,7 @@
                 </StackLayout>
 
                 <Image Grid.Column="2" Grid.Row="4" x:Name="im6" Source="pz6.png" />
-                <StackLayout Grid.Column="2" Grid.Row="5">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="5">
                     <Label
                         x:Name="pr6"
                         HorizontalOptions="CenterAndExpand"
@@ -134,7 +134,7 @@
 
 
                 <Image x:Name="im7" Source="pz7.png" Grid.Column="0" Grid.Row="6" />
-                <StackLayout Grid.Column="0" Grid.Row="7">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="7">
                     <Label
                         x:Name="pr7"
                         HorizontalOptions="CenterAndExpand"
@@ -150,7 +150,7 @@
                 </StackLayout>
 
                 <Image Grid.Column="2" Grid.Row="6" x:Name="im8" Source="pz8.png" />
-                <StackLayout Grid.Column="2" Grid.Row="7">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="7">
                     <Label
                         x:Name="pr8"
                         HorizontalOptions="CenterAndExpand"
@@ -167,7 +167,7 @@
 
 
                 <Image x:Name="im9" Source="pz9.png" Grid.Column="0" Grid.Row="8" />
-                <StackLayout Grid.Column="0" Grid.Row="9">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="9">
                     <Label
                         x:Name="pr9"
                         HorizontalOptions="CenterAndExpand"
@@ -183,7 +183,7 @@
                 </StackLayout>
 
                 <Image Grid.Column="2" Grid.Row="8" x:Name="im10" Source="pz10.png" />
-                <StackLayout Grid.Column="2" Grid.Row="9">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="9">
                     <Label
                         x:Name="pr10"
                         HorizontalOptions="CenterAndExpand"
@@ -201,7 +201,7 @@
 
 
                 <Image x:Name="im11" Source="pz1.png" Grid.Column="0" Grid.Row="10" />
-                <StackLayout Grid.Column="0" Grid.Row="11">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="11">
                     <Label
                         x:Name="pr11"
                         HorizontalOptions="CenterAndExpand"
@@ -217,7 +217,7 @@
                 </StackLayout>
 
                 <Image Grid.Column="2" Grid.Row="10" x:Name="im12" Source="pz2.png" />
-                <StackLayout Grid.Column="2" Grid.Row="11">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="11">
                     <Label
                         x:Name="pr12"
                         HorizontalOptions="CenterAndExpand"
@@ -235,7 +235,7 @@
 
 
                 <Image x:Name="im13" Source="pz1.png" Grid.Column="0" Grid.Row="12" />
-                <StackLayout Grid.Column="0" Grid.Row="13">
+                <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="13">
                     <Label
                         x:Name="pr13"
                         HorizontalOptions="CenterAndExpand"
@@ -251,7 +251,7 @@
                 </StackLayout>
 
                 <Image Grid.Column="2" Grid.Row="12" x:Name="im14" Source="pz2.png" />
-                <StackLayout Grid.Column="2" Grid.Row="13">
+                <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="13">
                     <Label
                         x:Name="pr14"
                         HorizontalOptions="CenterAndExpand"

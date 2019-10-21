@@ -14,11 +14,12 @@ namespace App1
     public partial class MainPage : ContentPage
     {
       public static  int n1, n2, n3, n4, n5, n6;
-        public string namerst;
+        public static string namerst;
         public MainPage()
         {
             InitializeComponent();
             guest(im1, im1_click);
+            guest(im2, im2_click);
         }
 
         private void guest(Image im,EventHandler l)
