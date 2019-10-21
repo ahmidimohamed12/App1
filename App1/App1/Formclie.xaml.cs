@@ -1,4 +1,6 @@
 ﻿using System;
+using Firebase.Database;
+using Firebase.Database.Query;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +8,15 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using App1.Models;
 
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Formclie : ContentPage
     {
+        public FirebaseClient firebase = new FirebaseClient("https://gerfast-86de6.firebaseio.com/");
+
         public Formclie()
         {
             InitializeComponent();
@@ -20,7 +25,16 @@ namespace App1
         private async void  valid(object sender,EventArgs e)
         {
             if (nom.Text != " " || numtele.Text != " ")
-               await SendSms("hy", "0623859495");
+            {
+                //int t;
+                //t = (from a in
+                //        select a).;
+
+                //await firebase
+                  //.Child("Resturant")
+                  //.PostAsync(new Resturants() { id = 0, name = MainPage.namerst, cmd =, total = 0 }) ;
+            }
+
         }
         public async Task SendSms(string messageText, string recipient)
         {

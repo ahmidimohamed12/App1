@@ -8,30 +8,52 @@
              x:Class="App1.Liver">
     <ContentPage.Content>
         <StackLayout>
-            <ListView SeparatorColor="Orange" x:Name="ls" HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell >
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Resturant" />
-                                <Label Text="{Binding id}" />
-                                <Label
-                                    Text="Command"
-                                    />
-                                <Label TextColor="Black"  Text="{Binding name}" />
-                                <Label
-                                    Text="Nom"
-                                    />
-                                <Label Text="Telephone" />
+            <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
+            <ScrollView Orientation="Vertical">
 
-                                <Label
-                                    Text="Total"
+                <ListView SeparatorColor="Orange" x:Name="ls" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="100" >
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                    <Label TextColor="White" Text="Resturant" />
+                                    <Label TextColor="White" Text="{Binding name}" />
+                                    <Label
+                                    Text="Command"
+                                    TextColor="White"
+                                        />
+                                    <Label TextColor="White"  Text="{Binding cmd}" />
+                                    <Label
+                                    Text="Nom"
+                                        TextColor="White"
                                     />
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                    <Label TextColor="White" Text="Telephone" />
+                                    <Label
+                                    Text="Total"
+                                        TextColor="White"
+                                    />
+                                    </StackLayout>
+                                    <Button
+                                        Text="Add"
+                                        Clicked="btnadd_Clicked"
+                                        x:Name="btnadd"
+                                        BackgroundColor="Orange"
+                                        TextColor="Black"
+                                        CornerRadius="20"
+                                        
+                                        />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

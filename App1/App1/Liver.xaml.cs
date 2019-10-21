@@ -8,6 +8,7 @@ using Firebase.Database;
 using Firebase.Database.Query;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Net.Mail;
 
 namespace App1
 {
@@ -20,10 +21,6 @@ namespace App1
         public Liver()
         {
             InitializeComponent();
-
-
-          
-
         }
 
         public async Task<IEnumerable<Resturants>> GetAllPersons()
@@ -37,7 +34,10 @@ namespace App1
                   name = item.Object.name
               }).ToList();
         }
-
+        private void sele(object sender, SelectedItemChangedEventArgs e)
+        {
+          
+        }
         protected async override void OnAppearing()
         {
             base.OnAppearing();
@@ -69,5 +69,21 @@ namespace App1
             }
 
         }
+
+        private async void btnadd_Clicked(object sender, EventArgs e)
+        {
+            //Button button = (Button)sender;
+            //StackLayout listViewItem = (StackLayout)button.Parent;
+            //Label label = (Label)listViewItem.Children[0];
+
+            //String text = label.Text;
+
+            ListView l = (ListView)sender;
+
+            var res = (Resturants)l.SelectedItem;
+            await DisplayAlert("ok", res.name.ToLower(), "ok");
+        }
+
+
     }
 }

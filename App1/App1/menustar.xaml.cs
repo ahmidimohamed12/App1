@@ -92,9 +92,12 @@ namespace App1
             //}
 
 
-
             Guest(im1, im1_click);
             Guest(im2, im2_click);
+            Guest(im3, im3_click);
+            Guest(im4, im4_click);
+            Guest(im5, im5_click);
+            Guest(im6, im6_click);
         }
         private  void Guest(Image im,EventHandler e)
         {
@@ -104,9 +107,6 @@ namespace App1
         }
         private async void im1_click(object sender,EventArgs e)
         {
-            //await firebase
-            //  .Child("Resturant")
-            //  .PostAsync(new Resturants() { id=0,name=MainPage.namerst, cmd=,total });
             tpizza = 1;
             tburger = 0;
             tglace = 0;
@@ -150,14 +150,86 @@ namespace App1
         }
         private async void  im4_click(object sender,EventArgs e)
         {
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
             await Navigation.PushModalAsync(new PRoductPages());
         }
         private  async void im5_click(object sender,EventArgs e)
         {
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
             await Navigation.PushModalAsync(new PRoductPages());
         }
         private async void im6_click(object sender, EventArgs e)
         {
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
+            await Navigation.PushModalAsync(new PRoductPages());
+        }
+        private  async void im7_click(object sender,EventArgs e)
+        {
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
+            await Navigation.PushModalAsync(new PRoductPages());
+        }
+        private async void im8_click(object sender,EventArgs e)
+        {
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
+            await Navigation.PushModalAsync(new PRoductPages());
+        }
+        private async void im9_click(object sender,EventArgs e)
+        {
+            tpizza = 0;
+            tburger = 0;
+            tglace = 0;
+            tsalad = 1;
+            ttacos = 0;
+            tpanini = 0;
+            tpate = 0;
+            tjus = 0;
+            tchicken = 0;
+            tdessert = 0;
             await Navigation.PushModalAsync(new PRoductPages());
         }
     }

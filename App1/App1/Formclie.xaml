@@ -10,10 +10,12 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <StackLayout Orientation="Horizontal">
-                <Image
-                    HorizontalOptions="CenterAndExpand"
-                    
-                    />
+                <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
             </StackLayout>
             <BoxView
                 HeightRequest="15"

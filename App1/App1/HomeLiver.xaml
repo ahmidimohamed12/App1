@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            BackgroundColor="Black"
+             x:Class="App1.HomeLiver">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
+            <Button
+                x:Name="btn"
+                Text="Start"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="Orange"
+                WidthRequest="290"
+                CornerRadius="20"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
