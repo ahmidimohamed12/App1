@@ -14,7 +14,7 @@ namespace App1
     public partial class MainPage : ContentPage
     {
       public static  int n1, n2, n3, n4, n5, n6;
-
+        public string namerst;
         public MainPage()
         {
             InitializeComponent();
@@ -34,6 +34,7 @@ namespace App1
             n3 = 0;
             n4 = 0;
             n5 = 0;
+            namerst = "skyfood";
             n6 = 0;
 
                 await    Navigation.PushModalAsync(new menustar());
@@ -46,6 +47,7 @@ namespace App1
             n4 = 0;
             n5 = 0;
             n6 = 0;
+            namerst = "skyfood";
             await Navigation.PushModalAsync(new menustar());
         }
         private async void im3_click(object sender,EventArgs e)
@@ -56,7 +58,7 @@ namespace App1
             n4 = 0;
             n5 = 0;
             n6 = 0;
-
+            namerst = "skyfood";
             await Navigation.PushModalAsync(new menustar());
         }
         private async void im4_click(object sender,EventArgs e)
@@ -67,7 +69,7 @@ namespace App1
             n4 = 1;
             n5 = 0;
             n6 = 0;
-
+            namerst = "skyfood";
             await Navigation.PushModalAsync(new menustar());
         }
         private async void im5_click(object sender,EventArgs E)
@@ -78,7 +80,7 @@ namespace App1
             n4 = 0;
             n5 = 1;
             n6 = 0;
-
+            namerst = "skyfood";
             await Navigation.PushModalAsync(new menustar());
         }
         private  async void im6_click(object sender,EventArgs e)
@@ -89,6 +91,7 @@ namespace App1
             n4 = 0;
             n5 = 0;
             n6 = 1;
+            namerst = "skyfood";
             await Navigation.PushModalAsync(new menustar());
         }
     }

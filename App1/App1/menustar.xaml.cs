@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using App1.Models;
 using System.Threading.Tasks;
-
+using Firebase.Database;
+using Firebase.Database.Query;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,12 +15,12 @@ namespace App1
     public partial class menustar : ContentPage
     {
         public static int tpizza, tburger, tsalad, tpanini, tpate,ttacos,tchicken,tglace,tdessert,tjus;
-        
+        public FirebaseClient firebase = new FirebaseClient("https://gerfast-86de6.firebaseio.com/");
+
         public menustar()
         {
             InitializeComponent();
             MainPage.n1 = 0;
-
             //if(MainPage.n1 == 1)
             //{
             //    im1.Source = ImageSource.FromFile("brg1.png");
@@ -31,7 +33,7 @@ namespace App1
             //    im8.Source = ImageSource.FromFile("gl1.png");
             //    im9.Source = ImageSource.FromFile("");
             //    im10.Source = ImageSource.FromFile("");
-                
+
 
             //}
             //if (MainPage.n2 == 1)
@@ -89,7 +91,7 @@ namespace App1
             //    im7.Source = ImageSource.FromFile("");
             //    im8.Source = ImageSource.FromFile("");
             //}
-          
+
 
 
             Guest(im1, im1_click);
@@ -103,8 +105,13 @@ namespace App1
         }
         private async void im1_click(object sender,EventArgs e)
         {
+          
 
-            await   Navigation.PushModalAsync(new PRoductPages());
+                await firebase
+                  .Child("Resturant")
+                  .PostAsync(new Resturants() { id=1,name="amal" });
+            
+            //await   Navigation.PushModalAsync(new PRoductPages());
         }
     private async void im2_click(object sender,EventArgs e)
         {
@@ -115,6 +122,14 @@ namespace App1
            await  Navigation.PushModalAsync(new PRoductPages());
         }
         private async void  im4_click(object sender,EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PRoductPages());
+        }
+        private  async void im5_click(object sender,EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PRoductPages());
+        }
+        private async void im6_click(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new PRoductPages());
         }
