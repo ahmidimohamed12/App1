@@ -22,6 +22,7 @@ namespace App1
         {
             InitializeComponent();
             ls.ItemSelected += btnadd_Clicked;
+            btvl.Clicked += sele;
         }
 
         public async Task<IEnumerable<Resturants>> GetAllPersons()
@@ -37,9 +38,10 @@ namespace App1
                   cmd = item.Object.cmd
               }).ToList();
         }
-        private void sele(object sender, SelectedItemChangedEventArgs e)
+        private void sele(object sender, EventArgs e)
         {
           
+
         }
         protected async override void OnAppearing()
         {
