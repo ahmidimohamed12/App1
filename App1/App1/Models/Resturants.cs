@@ -16,5 +16,6 @@ namespace App1.Models
 
         public string addr { get; set; }
         public int total { get; set; }
+        public string Datetime { get; set; }
     }
 }

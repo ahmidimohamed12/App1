@@ -16,6 +16,7 @@ namespace App1
     {
        
         int bt = 0;
+        public static List<Commands> cm = new List<Commands>();
     
         public PRoductPages()
         {
@@ -4672,7 +4673,7 @@ namespace App1
         }
         private async void btn_val(object sender,EventArgs e)
         {
-           await Navigation.PushModalAsync(new Formclie());
+           await Navigation.PushModalAsync(new Details());
         }
         private void Guest(Image im,EventHandler e)
         {
@@ -4687,116 +4688,117 @@ namespace App1
             cmd.name = m1.Text;
             cmd.prix= int.Parse(pr1.Text);
             menustar.command +="/"+cmd.name+"/"+cmd.prix.ToString();
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private  void im2_click(object sender,EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m2.Text;
+            cmd.prix =int.Parse(pr2.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im3_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix = int.Parse(pr1.Text);
+            cmd.name = m3.Text;
+            cmd.prix = int.Parse(pr3.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im4_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix = int.Parse(pr1.Text);
+            cmd.name = m4.Text;
+            cmd.prix = int.Parse(pr4.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im5_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m5.Text;
+            cmd.prix =int.Parse(pr5.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im6_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m6.Text;
+            cmd.prix =int.Parse(pr6.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im7_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m7.Text;
+            cmd.prix =int.Parse(pr7.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im8_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m8.Text;
+            cmd.prix =int.Parse(pr8.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im9_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m9.Text;
+            cmd.prix =int.Parse(pr9.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im10_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix = int.Parse(pr1.Text);
+            cmd.name = m10.Text;
+            cmd.prix = int.Parse(pr10.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im11_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m11.Text;
+            cmd.prix =int.Parse(pr11.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
         private void im12_click(object sender, EventArgs e)
         {
             Commands cmd = new Commands();
-            cmd.name = m1.Text;
-            cmd.prix =int.Parse(pr1.Text);
+            cmd.name = m12.Text;
+            cmd.prix =int.Parse(pr12.Text);
             menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
-
+            cm.Add(cmd);
             bt++;
             btnpl.Text = "طلبات" + bt;
         }

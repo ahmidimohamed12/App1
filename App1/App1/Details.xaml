@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Black"
+             x:Class="App1.Details">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"> 
+            <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
+            <ListView  HasUnevenRows="True" x:Name="ls">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="White"    Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label FontAttributes="Bold" Text="Command " TextColor="Black" />
+                                    <Label Text="{Binding  name}"  FontAttributes="Bold" TextColor="Black" />
+
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Prix" FontAttributes="Bold" TextColor="Black" />
+                                    <Label Text="{Binding prix}"  TextColor="Black"  FontAttributes="Bold" />
+                                </StackLayout>
+                                <Button
+                                    Text="0"
+                                    BackgroundColor="Orange"
+                                    CornerRadius="20"
+                                    WidthRequest="120"
+                                    x:Name="bb"
+                                    Clicked="Button_Clicked"
+                                    HorizontalOptions="CenterAndExpand"
+                                    />
+                            
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button
+                BackgroundColor="Orange"
+                CornerRadius="20"
+                Text="تأكيد"
+                FontAttributes="Bold"
+                TextColor="Black"
+                WidthRequest="280"
+                x:Name="bn"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

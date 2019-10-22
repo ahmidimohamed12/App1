@@ -23,22 +23,44 @@
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
                                     <Label TextColor="White" Text="Resturant" />
-                                        <Label TextColor="White" Text="{Binding  nomclient}" />
+                                     <Label TextColor="White" Text="{Binding  nomclient}" />
+                                  
                                     </StackLayout>
-                                    <Button
-                                        Text="Add"
-                                        x:Name="btnadd"
-                                        BackgroundColor="Orange"
-                                        TextColor="Black"
-                                        CornerRadius="20"
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="{Binding  tele}" />
+
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="{Binding  addr}" />
+
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="{Binding  cmd}" />
+
                                         
-                                        />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="{Binding  Datetime}" />
+
+                                    </StackLayout>
+                                   
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </ScrollView>
+              
+            </ScrollView> 
+            <Button
+                    Text="Valider"
+                TextColor="White"
+            x:Name="btvl"                    
+                    />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
