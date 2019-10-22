@@ -14,6 +14,7 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PRoductPages : ContentPage
     {
+       
         int bt = 0;
     
         public PRoductPages()
@@ -950,10 +951,10 @@ namespace App1
                 //}
                 if(menustar.tjus == 1)
                 {
-                    im1.Source = ImageSource.FromFile("");
-                    im2.Source = ImageSource.FromFile("");
-                    im3.Source = ImageSource.FromFile("");
-                    im4.Source = ImageSource.FromFile("");
+                    im1.Source = ImageSource.FromFile("jor.png");
+                    im2.Source = ImageSource.FromFile("jfraise.png");
+                    im3.Source = ImageSource.FromFile("javo.png");
+                    im4.Source = ImageSource.FromFile("panacher.png");
                     im5.Source = ImageSource.FromFile("");
                     im6.Source = ImageSource.FromFile("");
                     im7.Source = ImageSource.FromFile("");
@@ -4616,21 +4617,11 @@ namespace App1
 
                 if (menustar.tjus == 1)
                 {
-                    im1.Source = ImageSource.FromFile("");
-                    im2.Source = ImageSource.FromFile("");
-                    im3.Source = ImageSource.FromFile("");
-                    im4.Source = ImageSource.FromFile("");
-                    im5.Source = ImageSource.FromFile("");
-                    im6.Source = ImageSource.FromFile("");
-                    im7.Source = ImageSource.FromFile("");
-                    im8.Source = ImageSource.FromFile("");
-                    im9.Source = ImageSource.FromFile("");
-                    im10.Source = ImageSource.FromFile("");
-                    im11.Source = ImageSource.FromFile("");
-                    im12.Source = ImageSource.FromFile("");
-                    im13.Source = ImageSource.FromFile("");
-                    im14.Source = ImageSource.FromFile("");
-
+                    im1.Source = ImageSource.FromFile("jor.png");
+                    im2.Source = ImageSource.FromFile("panacher.png");
+                    im3.Source = ImageSource.FromFile("javo.png");
+                    im4.Source = ImageSource.FromFile("jfraise.png");
+                  
                     pr1.Text = "";
                     pr2.Text = "";
                     pr3.Text = "";
@@ -4695,6 +4686,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix= int.Parse(pr1.Text);
+            menustar.command +="/"+cmd.name+"/"+cmd.prix.ToString();
             bt++;
             btnpl.Text = "طلبات" + bt;
         }
@@ -4703,6 +4695,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4712,6 +4705,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix = int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4721,6 +4715,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix = int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4730,6 +4725,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4739,6 +4735,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4748,6 +4745,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4757,6 +4755,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4766,6 +4765,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4775,9 +4775,9 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix = int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
-
             btnpl.Text = "طلبات" + bt;
         }
         private void im11_click(object sender, EventArgs e)
@@ -4785,6 +4785,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;
@@ -4794,6 +4795,7 @@ namespace App1
             Commands cmd = new Commands();
             cmd.name = m1.Text;
             cmd.prix =int.Parse(pr1.Text);
+            menustar.command += "/" + cmd.name + "/" + cmd.prix.ToString();
 
             bt++;
             btnpl.Text = "طلبات" + bt;

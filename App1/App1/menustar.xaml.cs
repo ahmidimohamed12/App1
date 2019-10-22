@@ -16,7 +16,7 @@ namespace App1
     {
         public static int tpizza, tburger, tchawar,tsalad, tpanini, tpate,ttacos,tchicken,tglace,tdessert,tjus;
         public FirebaseClient firebase = new FirebaseClient("https://gerfast-86de6.firebaseio.com/");
-
+        public static string command;
         public menustar()
         {
             InitializeComponent();

@@ -8,8 +8,13 @@ namespace App1.Models
     {
         public int id { get; set; }
         public string  name{ get; set; }
-        public Commands cmd { get; set; }
+        public  string cmd { get; set; }
         public int qt;
+        public string nomclient { get; set; }
+
+        public string tele { get; set; }
+
+        public string addr { get; set; }
         public int total { get; set; }
     }
 }

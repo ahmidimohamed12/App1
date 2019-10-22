@@ -23,25 +23,10 @@
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
                                     <Label TextColor="White" Text="Resturant" />
-                                    <Label TextColor="White" Text="{Binding name}" />
-                                    <Label
-                                    Text="Command"
-                                    TextColor="White"
-                                        />
-                                    <Label TextColor="White"  Text="{Binding cmd}" />
-                                    <Label
-                                    Text="Nom"
-                                        TextColor="White"
-                                    />
-                                    <Label TextColor="White" Text="Telephone" />
-                                    <Label
-                                    Text="Total"
-                                        TextColor="White"
-                                    />
+                                        <Label TextColor="White" Text="{Binding  nomclient}" />
                                     </StackLayout>
                                     <Button
                                         Text="Add"
-                                        Clicked="btnadd_Clicked"
                                         x:Name="btnadd"
                                         BackgroundColor="Orange"
                                         TextColor="Black"

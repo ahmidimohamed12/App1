@@ -10,7 +10,7 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new Home();
+            MainPage = new HomeLiver();
         }
 
         protected override void OnStart()

@@ -56,11 +56,11 @@ namespace App1.Models
               .PutAsync(new Resturants() { id = personId, name = name });
         }
 
-        public async Task DeletePerson(int personId)
+        public async Task DeletePerson(string personId)
         {
             var toDeletePerson = (await firebase
               .Child("Resturant")
-              .OnceAsync<Resturants>()).Where(a => a.Object.id == personId).FirstOrDefault();
+              .OnceAsync<Resturants>()).Where(a => a.Object.nomclient == personId).FirstOrDefault();
             await firebase.Child("Resturant").Child(toDeletePerson.Key).DeleteAsync();
 
         }
