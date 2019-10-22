@@ -26,13 +26,13 @@ namespace App1
         {
             if (nom.Text != " " || numtele.Text != " ")
             {
-                //int t;
-                //t = (from a in
-                //        select a).;
+                int t;
+                t = (from a in  MainPage.res
+                        select a.cmd.prix).Max();
 
-                //await firebase
-                  //.Child("Resturant")
-                  //.PostAsync(new Resturants() { id = 0, name = MainPage.namerst, cmd =, total = 0 }) ;
+                await firebase
+                  .Child("Resturant")
+                  .PostAsync(new Resturants() { id = MainPage.res.Count, name = MainPage.namerst, cmd =, total = 0 });
             }
 
         }
