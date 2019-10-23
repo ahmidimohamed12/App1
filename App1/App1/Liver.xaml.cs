@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using App1.Models;
 using Firebase.Database;
 using Firebase.Database.Query;
+using System.Net;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Net.Mail;
@@ -15,6 +17,7 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Liver : ContentPage
     {
+       public List<Resturants> l;
     public    FirebaseHelper firebaseHelper = new FirebaseHelper();
         List<Resturants> group = new List<Resturants>();
         public FirebaseClient firebase = new FirebaseClient("https://gerfast-86de6.firebaseio.com/");
@@ -35,20 +38,47 @@ namespace App1
                   tele = item.Object.tele,
                   nomclient = item.Object.nomclient,
                   name = item.Object.name,
-                  cmd = item.Object.cmd
+                  cmd = item.Object.cmd,
+                  Datetime = item.Object.Datetime,
+                  addr = item.Object.addr
               }).ToList();
         }
-        private void sele(object sender, EventArgs e)
+        private async void sele(object sender, EventArgs e)
         {
-          
+            try
+            {
+                var p = await GetAllPersons();
+                string t = "";
+                List<Resturants> r = p.ToList();
+                for(int i  = 0;i<r.Count;i++)
+                {
+                    t +="********"+ i + "Command  :" + r[i].cmd + "\\ Client Nom :" + r[i].nomclient + "\\" + " Adress :" + r[i].addr + "\\ Resturant :" + r[i].name + r[i] + "\\ Telephone :" + r[i].tele+"*************";
+                }
+                var mail = new MailMessage();
+                var smtpServer = new SmtpClient("smtp.gmail.com", 587);
+                mail.From = new MailAddress("ahmidinador123@gmail.com");
+                mail.To.Add("ahmidinador123@gmail.com");
+                mail.Subject = "Command";
+                mail.Body = t.ToString();
+                //   smtpServer.Credentials = new NetworkCredential(passw.email, passw.pass);
+                smtpServer.Credentials = new NetworkCredential("ahmidinador123@gmail.com","nadori123456");
+                smtpServer.UseDefaultCredentials = false;
+                smtpServer.EnableSsl = true;
+                smtpServer.Send(mail);
 
+                await DeleteallPerson();
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Faild", ex.Message, "OK");
+            }
         }
         protected async override void OnAppearing()
         {
             base.OnAppearing();
             var allPersons = await GetAllPersons();
-            
             ls.ItemsSource = allPersons.ToList();
+            l = allPersons.ToList();
         }
           public async Task<Resturants> GetPerson(int personId)
         {
@@ -88,7 +118,14 @@ namespace App1
 
           //  await Navigation.PushModalAsync(new Liver());
         }
+        public async Task DeleteallPerson()
+        {
+            var toDeletePerson = (await firebase
+              .Child("Resturant")
+              .OnceAsync<Resturants>()).ToList();
+            await firebase.Child("Resturant").DeleteAsync();
 
+        }
         public async Task DeletePerson(string personId)
         {
             var toDeletePerson = (await firebase

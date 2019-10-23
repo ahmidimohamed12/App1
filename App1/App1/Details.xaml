@@ -28,25 +28,97 @@
                                     <Label Text="Prix" FontAttributes="Bold" TextColor="Black" />
                                     <Label Text="{Binding prix}"  TextColor="Black"  FontAttributes="Bold" />
                                 </StackLayout>
-                                <Button
-                                    Text="0"
+                                <StackLayout Orientation="Horizontal">
+                                    <Button
+                                            BackgroundColor="Red"
+                                        Text="حدف"
+                                        TextColor="Black"
+                                       
+                                        HorizontalOptions="StartAndExpand"
+                                        />
+
+                                    <Button
+                                   Text="+"
                                     BackgroundColor="Orange"
                                     CornerRadius="20"
-                                    WidthRequest="120"
-                                    x:Name="bb"
+                                    WidthRequest="60"
                                     Clicked="Button_Clicked"
                                     HorizontalOptions="CenterAndExpand"
                                     />
+                                    <Label
+                                        TextColor="Black"
+                                        FontAttributes="Bold"
+                                        FontSize="24"
+                                        x:Name="tl"
+                                        Text="{Binding s}"
+                                        />
+                                    <Button
+                                   Text="-"
+                                    BackgroundColor="Orange"
+                                    CornerRadius="20"
+                                    WidthRequest="60"
+                                    Clicked="Button_Clicked_1"
+                                    HorizontalOptions="CenterAndExpand"
+                                    />
+                                </StackLayout>
+                           
                             
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" >
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        Text="المجموع"
+                        />
+                    <Label
+                        
+                        HorizontalOptions="StartAndExpand"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                            Text="5"
+                        />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        Text="المجموع التوصيل"
+                        />
+                    <Label
+                        
+                        HorizontalOptions="StartAndExpand"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                            Text="5"
+                        />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        Text="المجموع"
+                        />
+                    <Label
+                        HorizontalOptions="StartAndExpand"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        />
+
+                </StackLayout>
+            </StackLayout>
+            
             <Button
                 BackgroundColor="Orange"
                 CornerRadius="20"
-                Text="تأكيد"
+                Text="تأكيد عملية الشراء"
                 FontAttributes="Bold"
                 TextColor="Black"
                 WidthRequest="280"

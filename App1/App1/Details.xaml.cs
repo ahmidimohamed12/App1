@@ -18,6 +18,7 @@ namespace App1
         {
             InitializeComponent();
             bn.Clicked += buttonval_click;
+
             ls.ItemsSource = PRoductPages.cm;
         }
 
@@ -29,12 +30,22 @@ namespace App1
         private void Button_Clicked(object sender, EventArgs e)
         {
             int n = 1;
+            int s=0;
             Button b = (Button)sender;
-            b.Text +=int.Parse(n.ToString());
+            s = n++;
         }
         private  async void buttonval_click(object sender,EventArgs e)
         {
             await Navigation.PushModalAsync(new Formclie());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            int n = 1;
+
+            Button b = (Button)sender;
+            int s=0;
+            s = n++;
         }
     }
 }

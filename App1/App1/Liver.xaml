@@ -14,12 +14,26 @@
                 WidthRequest="80"
                 HeightRequest="50"
                 />
+            <Label
+                HorizontalOptions="CenterAndExpand"
+                FontAttributes="Bold"
+                TextColor="White"
+                x:Name="tnm"
+                />   <Button
+                                    HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="260"
+                CornerRadius="20"
+                                    BackgroundColor="Green"
+                                    Text="طلبات الزبناء"
+                TextColor="Black"
+                                    />
             <ScrollView Orientation="Vertical">
-
+             
                 <ListView SeparatorColor="Orange" x:Name="ls" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell Height="100" >
+                            
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
                                     <Label TextColor="White" Text="Resturant" />
@@ -56,9 +70,13 @@
               
             </ScrollView> 
             <Button
-                    Text="Valider"
-                TextColor="White"
-            x:Name="btvl"                    
+                    Text="تأكيد"
+            x:Name="btvl"    
+                BackgroundColor="Orange"
+                CornerRadius="20"
+                WidthRequest="180"
+                TextColor="Black"
+                
                     />
             
         </StackLayout>

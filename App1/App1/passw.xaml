@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:ic="clr-namespace:IconEntry.FormsPlugin.Abstractions;assembly=IconEntry.FormsPlugin.Abstractions"
+             BackgroundColor="Black"
+             x:Class="App1.passw">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
+
+            <BoxView
+                
+                HeightRequest="45"
+                />
+            <ic:IconEntry HorizontalTextAlignment="Center"   HorizontalOptions="CenterAndExpand" PlaceholderColor="White" Placeholder="البريد الإلكتروني"  x:Name="txtemail" WidthRequest="240" />
+            <BoxView HeightRequest="25"/>
+            <ic:IconEntry  HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  Placeholder="الرقم السري" x:Name="txtpas"  WidthRequest="240"/>
+            <BoxView HeightRequest="40"/>
+            <Button
+                HorizontalOptions="CenterAndExpand"
+                Text="الدخول"
+                CornerRadius="20"
+                x:Name="btn"
+                BackgroundColor="Orange"
+                TextColor="Black"
+                WidthRequest="190"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

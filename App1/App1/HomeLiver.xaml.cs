@@ -19,7 +19,7 @@ namespace App1
         }
     private async void btn_click(object sender,EventArgs e)
         {
-           await Navigation.PushModalAsync(new Liver());
+           await Navigation.PushModalAsync(new passw());
         }
     }
 }

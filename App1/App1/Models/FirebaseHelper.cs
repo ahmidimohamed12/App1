@@ -64,5 +64,14 @@ namespace App1.Models
             await firebase.Child("Resturant").Child(toDeletePerson.Key).DeleteAsync();
 
         }
+        public async Task DeleteallPerson()
+        {
+            var toDeletePerson = (await firebase
+              .Child("Resturant")
+              .OnceAsync<Resturants>()).ToList();
+            await firebase.Child("Resturant").DeleteAsync();
+
+        }
+
     }
 }
