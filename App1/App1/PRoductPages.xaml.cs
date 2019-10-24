@@ -4047,30 +4047,52 @@ namespace App1
                 }
                 if (menustar.tpizza == 1)
                 {
-                    im1.Source = ImageSource.FromFile("pz1.png");
-                    im2.Source = ImageSource.FromFile("pz2.png");
-                    im3.Source = ImageSource.FromFile("pz3.png");
-                    im4.Source = ImageSource.FromFile("pz4.png");
-                    im5.Source = ImageSource.FromFile("pz5.png");
-                    im6.Source = ImageSource.FromFile("pz6.png");
-                    im7.Source = ImageSource.FromFile("pz7.png");
-                    im8.Source = ImageSource.FromFile("pz8.png");
-                    im9.Source = ImageSource.FromFile("pz9.png");
-                    im10.Source = ImageSource.FromFile("pz10.png");
 
 
+                    im1.IsVisible = false;
+                    im2.IsVisible = false;
+                    im3.IsVisible = false;
+                    m1.IsVisible = false;
+                    m2.IsVisible = false;
+                    m3.IsVisible = false;
+                    pr1.IsVisible = false;
+                    pr2.IsVisible = false;
+                    pr3.IsVisible = false;
+                    im4.IsVisible = false;
+                    im5.IsVisible = false;
+                    im6.IsVisible = false;
+                    im7.IsVisible = false;
+                    im8.IsVisible = false;
+                    pr4.IsVisible = false;
+                    pr5.IsVisible = false;
+                    pr6.IsVisible = false;
+                    pr7.IsVisible = false;
+                    pr8.IsVisible = false;
+                    m4.IsVisible = false;
+                    m5.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
 
+                    im9.IsVisible = false;
+                    im10.IsVisible = false;
                     im11.IsVisible = false;
                     im12.IsVisible = false;
                     im13.IsVisible = false;
                     im14.IsVisible = false;
+                    pr9.IsVisible = false;
+                    pr10.IsVisible = false;
+                    pr11.IsVisible = false;
+                    pr12.IsVisible = false;
+                    pr13.IsVisible = false;
+                    pr14.IsVisible = false;
 
-                    im9.Source = ImageSource.FromFile("pz9.png");
-                    im10.Source = ImageSource.FromFile("pz10.png");
-                    im11.Source = ImageSource.FromFile("");
-                    im12.Source = ImageSource.FromFile("");
-                    im13.Source = ImageSource.FromFile("");
-                    im14.Source = ImageSource.FromFile("");
+                    m9.IsVisible = false;
+                    m10.IsVisible = false;
+                    m11.IsVisible = false;
+                    m12.IsVisible = false;
+                    m13.IsVisible = false;
+                    m14.IsVisible = false;
 
 
                     pr11.IsVisible = false;
