@@ -15,15 +15,13 @@
                 WidthRequest="80"
                 HeightRequest="50"
                 />
-
             <BoxView
-                
                 HeightRequest="45"
                 />
-            <ic:IconEntry HorizontalTextAlignment="Center"   HorizontalOptions="CenterAndExpand" PlaceholderColor="White" Placeholder="البريد الإلكتروني"  x:Name="txtemail" WidthRequest="240" />
+            <ic:IconEntry    HorizontalTextAlignment="Center"   HorizontalOptions="CenterAndExpand" PlaceholderColor="White" Placeholder="البريد الإلكتروني"  x:Name="txtemail" WidthRequest="240" />
             <BoxView HeightRequest="25"/>
-            <ic:IconEntry  HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  Placeholder="الرقم السري" x:Name="txtpas"  WidthRequest="240"/>
-            <BoxView HeightRequest="40"/>
+            <ic:IconEntry IsPassword="True" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  Placeholder="الرقم السري" x:Name="txtpas"  WidthRequest="240"/>
+            <BoxView   HeightRequest="40"/>
             <Button
                 HorizontalOptions="CenterAndExpand"
                 Text="الدخول"

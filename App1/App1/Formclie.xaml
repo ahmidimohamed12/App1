@@ -24,7 +24,7 @@
             <BoxView
                 HeightRequest="30"
                 />
-            <ic:IconEntry  TextColor="White" WidthRequest="200" Placeholder="رقم الهاتف" HorizontalOptions="CenterAndExpand"  x:Name="numtele" PlaceholderColor="White"/>
+            <ic:IconEntry  Keyboard="Numeric" TextColor="White" WidthRequest="200" Placeholder="رقم الهاتف" HorizontalOptions="CenterAndExpand"  x:Name="numtele" PlaceholderColor="White"/>
             <BoxView
                 HeightRequest="30"
                 />

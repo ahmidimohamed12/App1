@@ -13,13 +13,20 @@ namespace App1
     public partial class Details : ContentPage
     {
         int bt = 0;
-        
+        decimal npri;
         public Details()
         {
             InitializeComponent();
             bn.Clicked += buttonval_click;
 
             ls.ItemsSource = PRoductPages.cm;
+
+            npri = (from a in PRoductPages.cm
+                         select a).Sum(m => m.prix);
+            tt.Text = npri.ToString();
+            decimal al = npri + 5;
+            to.Text = al.ToString();
+        
         }
 
         private void btn_Clicked(object sender, EventArgs e)
@@ -32,7 +39,10 @@ namespace App1
             int n = 1;
             int s=0;
             Button b = (Button)sender;
-            s = n++;
+            n++;
+            b.Text = n.ToString();
+
+            
         }
         private  async void buttonval_click(object sender,EventArgs e)
         {
@@ -41,11 +51,13 @@ namespace App1
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            int n = 1;
 
-            Button b = (Button)sender;
-            int s=0;
-            s = n++;
+            
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            
         }
     }
 }

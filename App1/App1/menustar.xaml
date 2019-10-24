@@ -176,7 +176,7 @@
                 
                 
                 
-                    <Image Source="ds1.png" x:Name="im11" Grid.Column="0" Grid.Row="10"  />
+                    <Image Source="jor.png" x:Name="im11" Grid.Column="0" Grid.Row="10"  />
 
                     <StackLayout  Orientation="Horizontal"  Grid.Column="0" Grid.Row="11">
                         <Label

