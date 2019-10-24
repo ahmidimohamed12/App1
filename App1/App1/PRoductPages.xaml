@@ -8,11 +8,8 @@
              x:Class="App1.PRoductPages">
     <ContentPage.Content>
         <StackLayout>
-            <Image 
-                Source="dl.png"
-                HorizontalOptions="CenterAndExpand"
-                WidthRequest="80"
-                HeightRequest="50"
+            <BoxView
+                HeightRequest="20"
                 />
             <ScrollView>
 

@@ -8,15 +8,11 @@
              x:Class="App1.menustar">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-           <StackLayout Orientation="Horizontal">
-                <Image 
-                Source="dl.png"
-                HorizontalOptions="CenterAndExpand"
-                WidthRequest="80"
-                HeightRequest="50"
+
+            <BoxView
+                HeightRequest="20"
                 />
-            </StackLayout>
-        
+
             <Image
                 Source="pin.png"
                 HorizontalOptions="CenterAndExpand"

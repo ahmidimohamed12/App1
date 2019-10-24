@@ -10,10 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+  
     public partial class Details : ContentPage
     {
         int bt = 0;
         decimal npri;
+        public static List<decimal> pr = new List<decimal>();  
         public Details()
         {
             InitializeComponent();
@@ -36,13 +38,15 @@ namespace App1
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            int n = 1;
-            int s=0;
+            decimal n = 1;
+            decimal s=0;
             Button b = (Button)sender;
             n++;
             b.Text = n.ToString();
+            pr.Add(n);
 
             
+
         }
         private  async void buttonval_click(object sender,EventArgs e)
         {
