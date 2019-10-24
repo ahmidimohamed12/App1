@@ -15,7 +15,8 @@ namespace App1
     {
         int bt = 0;
         decimal npri;
-        public static List<decimal> pr = new List<decimal>();  
+        public static List<decimal> pr = new List<decimal>();
+        public static   decimal al;
         public Details()
         {
             InitializeComponent();
@@ -26,8 +27,11 @@ namespace App1
             npri = (from a in PRoductPages.cm
                          select a).Sum(m => m.prix);
             tt.Text = npri.ToString();
-            decimal al = npri + 5;
+         al  = npri + 5;
             to.Text = al.ToString();
+
+
+
         
         }
 

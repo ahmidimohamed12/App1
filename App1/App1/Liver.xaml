@@ -36,32 +36,36 @@
                             
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
-                                    <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="إسم الزبون" />
                                      <Label TextColor="White" Text="{Binding  nomclient}" />
                                   
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="إسم المطعم" />
                                         <Label TextColor="White" Text="{Binding  tele}" />
 
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label TextColor="White" Text="Resturant" />
-                                        <Label TextColor="White" Text="{Binding  addr}" />
+                                        <Label TextColor="White" Text="رقم الهاتف" />
+                                        <Label TextColor="White" Text="{Binding  tele}" />
 
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label TextColor="White" Text="Resturant" />
-                                        <Label TextColor="White" Text="{Binding  cmd}" />
+                                        <Label TextColor="White" Text="العنوان" />
+                                        <Label TextColor="White" Text="{Binding  addr}" />
 
                                         
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
                                         <Label TextColor="White" Text="Resturant" />
+                                        <Label TextColor="White" Text="{Binding  name}" />
+
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="White" Text="time" />
                                         <Label TextColor="White" Text="{Binding  Datetime}" />
 
                                     </StackLayout>
-                                   
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

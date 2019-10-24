@@ -185,7 +185,7 @@ namespace App1
                 if(menustar.tburger == 1)
                 {
                     im1.Source = ImageSource.FromFile("brg1.png");
-                    im2.Source = ImageSource.FromFile("brg2.png");
+                    im2.Source = ImageSource.FromFile("brg8.png");
                     im3.Source = ImageSource.FromFile("brg3.png");
                     im4.Source = ImageSource.FromFile("brg4.png");
                     im5.Source = ImageSource.FromFile("brg5.png");
@@ -206,7 +206,6 @@ namespace App1
                     pr12.IsVisible = false;
                     pr13.IsVisible = false;
                     pr14.IsVisible = false;
-
                     m8.IsVisible = false;
                     m9.IsVisible = false;
                     m10.IsVisible = false;
