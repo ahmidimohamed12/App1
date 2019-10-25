@@ -1992,13 +1992,13 @@ namespace App1
                     pr7.Text = "20";
 
 
-                    m1.Text = "Fromage";
-                    m2.Text = "Thon";
-                    m3.Text = "Poulet";
-                    m4.Text = "Viande Hacher";
-                    m5.Text = "Fruit de Mer";
-                    m6.Text = "Mixte";
-                    m7.Text = "Torino Food";
+                    m1.Text = "Thon";
+                    m2.Text = "Sauciess";
+                    m3.Text = "Kefta";
+                    m4.Text = "Dinde";
+                    m5.Text = "Mixte";
+                    m6.Text = "Escalop";
+                    m7.Text = "Fruit de Mer";
 
                 }
                 if (menustar.tpate == 1)
@@ -2293,6 +2293,21 @@ namespace App1
                     im2.Source = ImageSource.FromFile("ds1.png");
                     im3.Source = ImageSource.FromFile("ds3.png");
                     im4.Source = ImageSource.FromFile("gl1.png");
+                    im1.IsVisible = false;
+                    im2.IsVisible = false;
+                    im3.IsVisible = false;
+                    im4.IsVisible = false;
+                    m1.IsVisible = false;
+                    m2.IsVisible = false;
+                    m3.IsVisible = false;
+                    m4.IsVisible = false;
+
+                    pr1.IsVisible = false;
+                    pr2.IsVisible = false;
+                    pr3.IsVisible = false;
+                    pr4.IsVisible = false;
+
+
 
                     im8.IsVisible = false;
                     im6.IsVisible = false;
@@ -2365,50 +2380,54 @@ namespace App1
 
                 if (menustar.tjus == 1)
                 {
-                    im1.Source = ImageSource.FromFile("");
-                    im2.Source = ImageSource.FromFile("");
-                    im3.Source = ImageSource.FromFile("");
-                    im4.Source = ImageSource.FromFile("");
-                    im5.Source = ImageSource.FromFile("");
-                    im6.Source = ImageSource.FromFile("");
-                    im7.Source = ImageSource.FromFile("");
-                    im8.Source = ImageSource.FromFile("");
-                    im9.Source = ImageSource.FromFile("");
-                    im10.Source = ImageSource.FromFile("");
-                    im11.Source = ImageSource.FromFile("");
-                    im12.Source = ImageSource.FromFile("");
-                    im13.Source = ImageSource.FromFile("");
-                    im14.Source = ImageSource.FromFile("");
+                    im1.Source = ImageSource.FromFile("jor.png");
+                    im2.Source = ImageSource.FromFile("javo.png");
+                    im3.Source = ImageSource.FromFile("jfraise.png");
+                    im4.Source = ImageSource.FromFile("panacher.png");
 
-                    pr1.Text = "";
-                    pr2.Text = "";
-                    pr3.Text = "";
-                    pr4.Text = "";
-                    pr5.Text = "";
-                    pr6.Text = "";
-                    pr7.Text = "";
-                    pr8.Text = "";
-                    pr9.Text = "";
-                    pr10.Text = "";
-                    pr11.Text = "";
-                    pr12.Text = "";
-                    pr13.Text = "";
-                    pr14.Text = "";
 
-                    m1.Text = "";
-                    m2.Text = "";
-                    m3.Text = "";
-                    m4.Text = "";
-                    m5.Text = "";
-                    m6.Text = "";
-                    m7.Text = "";
-                    m8.Text = "";
-                    m9.Text = "";
-                    m10.Text = "";
-                    m11.Text = "";
-                    m12.Text = "";
-                    m13.Text = "";
-                    m14.Text = "";
+                    im5.IsVisible = false;
+                    im6.IsVisible = false;
+                    im7.IsVisible = false;
+                    im8.IsVisible = false;
+                    im9.IsVisible = false;
+                    im10.IsVisible = false;
+                    im11.IsVisible = false;
+                    im12.IsVisible = false;
+                    im13.IsVisible = false;
+                    im14.IsVisible = false;
+
+                    m5.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
+                    m9.IsVisible = false;
+                    m10.IsVisible = false;
+                    m11.IsVisible = false;
+                    m12.IsVisible = false;
+                    m13.IsVisible = false;
+                    m14.IsVisible = false;
+
+                    pr5.IsVisible = false;
+                    pr6.IsVisible = false;
+                    pr7.IsVisible = false;
+                    pr8.IsVisible = false;
+                    pr9.IsVisible = false;
+                    pr10.IsVisible = false;
+                    pr11.IsVisible = false;
+                    pr12.IsVisible = false;
+                    pr13.IsVisible = false;
+                    pr14.IsVisible = false;
+
+                    pr1.Text = "7";
+                    pr2.Text = "8";
+                    pr3.Text = "10";
+                    pr4.Text = "13";
+
+                    m1.Text = "orange";
+                    m2.Text = "Banane";
+                    m3.Text = "Avocat";
+                    m4.Text = "Panacher";
                 }
             }
             if (MainPage.n4 == 1)
@@ -3257,6 +3276,14 @@ namespace App1
                     im6.Source = ImageSource.FromFile("pz6.png");
                     im7.Source = ImageSource.FromFile("pz7.png");
                     im8.Source = ImageSource.FromFile("pz8.png");
+
+                    im9.IsVisible = false;
+                    im10.IsVisible = false;
+                    m9.IsVisible = false;
+                    m10.IsVisible = false;
+                    pr9.IsVisible = false;
+                    pr10.IsVisible = false;
+
                     im9.Source = ImageSource.FromFile("pz9.png");
                     im10.Source = ImageSource.FromFile("pz10.png");
 
@@ -3280,24 +3307,24 @@ namespace App1
                     pr13.IsVisible = false;
                     pr14.IsVisible = false;
 
-                    pr1.Text = "20";
-                    pr2.Text = "25";
-                    pr3.Text = "25";
-                    pr4.Text = "30";
-                    pr5.Text = "25";
-                    pr6.Text = "30";
-                    pr7.Text = "35";
-                    pr8.Text = "35";
+                    pr1.Text = "25";
+                    pr2.Text = "22";
+                    pr3.Text = "35";
+                    pr4.Text = "22";
+                    pr5.Text = "30";
+                    pr6.Text = "22";
+                    pr7.Text = "22";
+                    pr8.Text = "30";
                     pr9.Text = "30";
                     pr10.Text = "30";
 
-                    m1.Text = "Margarita";
-                    m2.Text = "Vegetarian";
-                    m3.Text = "Thon";
-                    m4.Text = "Charcuterie";
-                    m5.Text = "Bolognaise";
-                    m6.Text = "Chicken";
-                    m7.Text = "Fruit de Mer";
+                    m1.Text = "fruit de Mer";
+                    m2.Text = "Margarita";
+                    m3.Text = "Royal";
+                    m4.Text = "Thon";
+                    m5.Text = "American";
+                    m6.Text = "Dinde";
+                    m7.Text = "Merguez";
                     m8.Text = "Quatre Saison";
                     m9.Text = "Quatre Fromage";
                     m10.Text = "Supreme";
@@ -3326,6 +3353,33 @@ namespace App1
                     pr8.Text = "";
                     m8.Text = "";
 
+                    im1.IsVisible = false;
+                    im2.IsVisible = false;
+                    im3.IsVisible = false;
+                    im4.IsVisible = false;
+                    im5.IsVisible = false;
+                    im6.IsVisible = false;
+                    im7.IsVisible = false;
+                    im8.IsVisible = false;
+
+
+                    m1.IsVisible = false;
+                    m2.IsVisible = false;
+                    m3.IsVisible = false;
+                    m4.IsVisible = false;
+                    m5.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
+                    pr1.IsVisible = false;
+                    pr2.IsVisible = false;
+                    pr3.IsVisible = false;
+                    pr4.IsVisible = false;
+                    pr5.IsVisible = false;
+                    pr6.IsVisible = false;
+                    pr7.IsVisible = false;
+                    pr8.IsVisible = false;
+
                     im9.IsVisible = false;
                     im10.IsVisible = false;
                     im11.IsVisible = false;
@@ -3346,81 +3400,45 @@ namespace App1
                     m13.IsVisible = false;
                     m14.IsVisible = false;
 
-                    im8.Source = ImageSource.FromFile("brg8.png");
-                    im9.Source = ImageSource.FromFile("brg9.png");
-                    im10.Source = ImageSource.FromFile("");
-                    im11.Source = ImageSource.FromFile("");
-                    im12.Source = ImageSource.FromFile("");
-                    im13.Source = ImageSource.FromFile("");
-                    im14.Source = ImageSource.FromFile("");
-
-                    pr1.Text = "22";
-                    pr2.Text = "40";
-                    pr3.Text = "18";
-                    pr4.Text = "30";
-                    pr5.Text = "40";
-                    pr6.Text = "40";
-                    pr7.Text = "30";
-                    pr8.Text = "30";
-                    pr9.Text = "";
-                    pr10.Text = "";
-                    pr11.Text = "";
-                    pr12.Text = "";
-                    pr13.Text = "";
-                    pr14.Text = "";
-
-                    m1.Text = "Chicken ";
-                    m2.Text = "Double Chicken ";
-                    m3.Text = "Chees";
-                    m4.Text = "Double Chees";
-                    m5.Text = "Chicken Beef";
-                    m6.Text = "Chees & Double";
-                    m7.Text = "Torino";
-                    m8.Text = "Fish";
-                    m9.Text = "";
-                    m10.Text = "";
-                    m11.Text = "";
-                    m12.Text = "";
-                    m13.Text = "";
-                    m14.Text = "";
+               
                 }
                 if (menustar.tsalad == 1)
                 {
-                    im1.Source = ImageSource.FromFile("sld1.png");
-                    im2.Source = ImageSource.FromFile("sld2.png");
-                    im3.Source = ImageSource.FromFile("sld3.png");
-                    im4.Source = ImageSource.FromFile("sld4.png");
-                    im5.Source = ImageSource.FromFile("sld5.png");
-                    im6.Source = ImageSource.FromFile("sld6.png");
 
 
+                    im1.IsVisible = false;
+                    im2.IsVisible = false;
+                    im3.IsVisible = false;
+                    im4.IsVisible = false;
+                    im5.IsVisible = false;
+                    im6.IsVisible = false;
+                    im7.IsVisible = false;
+                    im8.IsVisible = false;
+                    m1.IsVisible = false;
+                    m2.IsVisible = false;
+                    m3.IsVisible = false;
+                    m4.IsVisible = false;
+                    m5.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
+                    m1.IsVisible = false;
+                    m2.IsVisible = false;
+                    m3.IsVisible = false;
+                    m4.IsVisible = false;
+                    m5.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
+                    pr1.IsVisible = false;
+                    pr2.IsVisible = false;
+                    pr3.IsVisible = false;
+                    pr4.IsVisible = false;
+                    pr5.IsVisible = false;
+                    pr6.IsVisible = false;
+                    pr7.IsVisible = false;
+                    pr8.IsVisible = false;
 
-
-
-                    im7.Source = ImageSource.FromFile("sld1.png");
-                    im8.Source = ImageSource.FromFile("sld3.png");
-
-
-                    pr1.Text = "13";
-                    pr2.Text = "15";
-                    pr3.Text = "17";
-                    pr4.Text = "20";
-                    pr5.Text = "40";
-
-                    pr6.Text = "25";
-
-                    pr7.Text = "25";
-                    pr8.Text = "27";
-
-
-
-
-                    pr9.Text = "";
-                    pr10.Text = "";
-                    pr11.Text = "";
-                    pr12.Text = "";
-                    pr13.Text = "";
-                    pr14.Text = "";
 
                     im9.IsVisible = false;
                     im10.IsVisible = false;
@@ -3441,14 +3459,6 @@ namespace App1
                     m12.IsVisible = false;
                     m13.IsVisible = false;
                     m14.IsVisible = false;
-                    m1.Text = "eco";
-                    m2.Text = "Nicoise";
-                    m3.Text = "Surimi";
-                    m4.Text = "Mixte";
-                    m5.Text = "Torino Food";
-                    m6.Text = "Fish";
-                    m7.Text = "Italy";
-                    m8.Text = "Chicken";
                 }
                 if (menustar.tpanini == 1)
                 {
@@ -3457,9 +3467,12 @@ namespace App1
                     im3.Source = ImageSource.FromFile("pann3.png");
                     im4.Source = ImageSource.FromFile("pann4.png");
                     im5.Source = ImageSource.FromFile("pann5.png");
-                    im6.Source = ImageSource.FromFile("pann6.png");
-                    im7.Source = ImageSource.FromFile("pann7.png");
-
+                    im6.IsVisible = false;
+                    im7.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    pr6.IsVisible = false;
+                    pr7.IsVisible = false;
                     im8.IsVisible = false;
                     im6.IsVisible = false;
                     im5.IsVisible = false;
@@ -3499,26 +3512,17 @@ namespace App1
 
 
 
-                    pr1.Text = "15";
+                    pr1.Text = "14";
                     pr2.Text = "17";
                     pr3.Text = "19";
-                    pr4.Text = "21";
-                    pr5.Text = "22";
-                    pr6.Text = "23";
-                    pr7.Text = "35";
-                    pr8.Text = "";
-                    pr9.Text = "";
-                    pr10.Text = "";
-                    pr11.Text = "";
-                    pr12.Text = "";
-                    pr13.Text = "";
-                    pr14.Text = "";
+                    pr4.Text = "17";
+                    pr5.Text = "17";
 
-                    m1.Text = "Fromage";
-                    m2.Text = "Thon";
-                    m3.Text = "Poulet";
-                    m4.Text = "Viande Hacher";
-                    m5.Text = "Fruit de Mer";
+                    m1.Text = "Polet";
+                    m2.Text = "Dinde";
+                    m3.Text = "Kefta";
+                    m4.Text = "Kebda";
+                    m5.Text = "Soucies";
                     m6.Text = "Mixte";
                     m7.Text = "Torino Food";
                     m8.Text = "";
@@ -3531,29 +3535,29 @@ namespace App1
                 }
                 if (menustar.tpate == 1)
                 {
-                    im1.Source = ImageSource.FromFile("ptt1.png");
-                    im2.Source = ImageSource.FromFile("ptt2.png");
-                    im3.Source = ImageSource.FromFile("ptt3.png");
-                    im4.Source = ImageSource.FromFile("ptt4.png");
-                    im5.Source = ImageSource.FromFile("ptt5.png");
-
-                    im6.Source = ImageSource.FromFile("");
-                    im7.Source = ImageSource.FromFile("");
-                    im8.Source = ImageSource.FromFile("");
-                    im9.Source = ImageSource.FromFile("");
-                    im10.Source = ImageSource.FromFile("");
-                    im11.Source = ImageSource.FromFile("");
-                    im12.Source = ImageSource.FromFile("");
-                    im13.Source = ImageSource.FromFile("");
-                    im14.Source = ImageSource.FromFile("");
+                   
                     im8.IsVisible = false;
                     im6.IsVisible = false;
                     im7.IsVisible = false;
                     pr8.IsVisible = false;
                     pr7.IsVisible = false;
                     pr6.IsVisible = false;
-
-
+                    im1.IsVisible = false;
+                    im2.IsVisible = false;
+                    im3.IsVisible = false;
+                    im4.IsVisible = false;
+                    im5.IsVisible = false;
+                    m1.IsVisible = false;
+                    m2.IsVisible = false;
+                    m3.IsVisible = false;
+                    m4.IsVisible = false;
+                    m5.IsVisible = false;
+                    pr1.IsVisible = false;
+                    pr2.IsVisible = false;
+                    pr3.IsVisible = false;
+                    pr4.IsVisible = false;
+                    pr5.IsVisible = false;
+                    pr6.IsVisible = false;
                     m6.IsVisible = false;
 
                     m7.IsVisible = false;
@@ -3580,37 +3584,7 @@ namespace App1
                     m13.IsVisible = false;
                     m14.IsVisible = false;
 
-                    pr1.Text = "30";
-                    pr2.Text = "33";
-                    pr3.Text = "33";
-                    pr4.Text = "35";
-                    pr5.Text = "35";
-                    pr6.Text = "";
-                    pr7.Text = "";
-                    pr8.Text = "";
-                    pr9.Text = "";
-                    pr10.Text = "";
-                    pr11.Text = "";
-                    pr12.Text = "";
-                    pr13.Text = "";
-                    pr14.Text = "";
-
-                    m1.Text = "Bolognaise";
-                    m2.Text = "Carbonara";
-                    m3.Text = "Polet Champignon";
-                    m4.Text = "4 fromage";
-                    m5.Text = "Fruit de Mer";
-                    m6.Text = "";
-                    m7.Text = "";
-                    m8.Text = "";
-                    m9.Text = "";
-                    m10.Text = "";
-                    m11.Text = "";
-                    m12.Text = "";
-                    m13.Text = "";
-                    m14.Text = "";
-
-
+                   
 
                 }
                 if (menustar.ttacos == 1)
@@ -3621,9 +3595,17 @@ namespace App1
                     im4.Source = ImageSource.FromFile("tcs4.png");
                     im5.Source = ImageSource.FromFile("tcs5.png");
                     im6.Source = ImageSource.FromFile("tcs6.png");
-                    im7.Source = ImageSource.FromFile("tcs7.png");
-                    im8.Source = ImageSource.FromFile("tcs8.png");
-                    im9.Source = ImageSource.FromFile("tcs9.png");
+
+
+                    im7.IsVisible = false;
+                    im8.IsVisible = false;
+                    im9.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
+                    m10.IsVisible = false;
+                    pr7.IsVisible = false;
+                    pr8.IsVisible = false;
+                    pr9.IsVisible = false;
 
                     im10.IsVisible = false;
                     im11.IsVisible = false;
@@ -3642,37 +3624,30 @@ namespace App1
                     m12.IsVisible = false;
                     m13.IsVisible = false;
                     m14.IsVisible = false;
-                    pr1.Text = "18";
-                    pr2.Text = "25";
-                    pr3.Text = "27";
-                    pr4.Text = "27";
-                    pr5.Text = "35";
-                    pr6.Text = "30";
+                    pr1.Text = "25";
+                    pr2.Text = "28";
+                    pr3.Text = "25";
+                    pr4.Text = "25";
+                    pr5.Text = "22";
+                    pr6.Text = "35";
                     pr7.Text = "35";
                     pr8.Text = "20";
                     pr9.Text = "20";
 
 
-                    m1.Text = "Thon";
-                    m2.Text = "Polet";
-                    m3.Text = "Viand Hacher";
-                    m4.Text = "Escalop";
-                    m5.Text = "Torino Food";
-                    m6.Text = "Nuggets";
+                    m1.Text = "Dinde";
+                    m2.Text = "Kefta";
+                    m3.Text = "soucies";
+                    m4.Text = "Kebda";
+                    m5.Text = "Polet";
+                    m6.Text = "Mixte";
                     m7.Text = "Cordon Bleu";
                     m8.Text = "Vegetarian";
                     m9.Text = "Mini";
-                    m10.Text = "";
-                    m11.Text = "";
-                    m12.Text = "";
-                    m13.Text = "";
-                    m14.Text = "";
+                 
                 }
                 if (menustar.tchicken == 1)
                 {
-
-
-
                     im8.IsVisible = false;
                     im6.IsVisible = false;
                     im5.IsVisible = false;
@@ -3733,7 +3708,7 @@ namespace App1
                     im14.Source = ImageSource.FromFile("");
 
                     pr1.Text = "25";
-                    pr2.Text = "45";
+                    pr2.Text = "50";
                     pr3.Text = "90";
                     pr4.Text = "";
                     pr5.Text = "";
@@ -3894,25 +3869,46 @@ namespace App1
 
                 if (menustar.tjus == 1)
                 {
-                    im1.Source = ImageSource.FromFile("");
-                    im2.Source = ImageSource.FromFile("");
-                    im3.Source = ImageSource.FromFile("");
-                    im4.Source = ImageSource.FromFile("");
-                    im5.Source = ImageSource.FromFile("");
-                    im6.Source = ImageSource.FromFile("");
-                    im7.Source = ImageSource.FromFile("");
-                    im8.Source = ImageSource.FromFile("");
-                    im9.Source = ImageSource.FromFile("");
-                    im10.Source = ImageSource.FromFile("");
-                    im11.Source = ImageSource.FromFile("");
-                    im12.Source = ImageSource.FromFile("");
-                    im13.Source = ImageSource.FromFile("");
-                    im14.Source = ImageSource.FromFile("");
+                    im1.Source = ImageSource.FromFile("javo.png");
+                    im2.Source = ImageSource.FromFile("jor.png");
+                    im3.Source = ImageSource.FromFile("jfraise.png");
+                    im4.Source = ImageSource.FromFile("panacher.png");
 
-                    pr1.Text = "";
-                    pr2.Text = "";
-                    pr3.Text = "";
-                    pr4.Text = "";
+                    im5.IsVisible = false;
+                    im6.IsVisible = false;
+                    im7.IsVisible = false;
+                    im8.IsVisible = false;
+                    im9.IsVisible = false;
+                    im10.IsVisible = false;
+                    im11.IsVisible = false;
+                    im12.IsVisible = false;
+                    im13.IsVisible = false;
+                    im14.IsVisible = false;
+                    m5.IsVisible = false;
+                    m6.IsVisible = false;
+                    m7.IsVisible = false;
+                    m8.IsVisible = false;
+                    m9.IsVisible = false;
+                    m10.IsVisible = false;
+                    m11.IsVisible = false;
+                    m12.IsVisible = false;
+                    m13.IsVisible = false;
+                    m14.IsVisible = false;
+                    pr5.IsVisible = false;
+                    pr6.IsVisible = false;
+                    pr7.IsVisible = false;
+                    pr8.IsVisible = false;
+                    pr9.IsVisible = false;
+                    pr10.IsVisible = false;
+                    pr11.IsVisible = false;
+                    pr12.IsVisible = false;
+                    pr13.IsVisible = false;
+                    pr14.IsVisible = false;
+
+                    pr1.Text = "10";
+                    pr2.Text = "8";
+                    pr3.Text = "8";
+                    pr4.Text = "10";
                     pr5.Text = "";
                     pr6.Text = "";
                     pr7.Text = "";
@@ -3924,10 +3920,10 @@ namespace App1
                     pr13.Text = "";
                     pr14.Text = "";
 
-                    m1.Text = "";
-                    m2.Text = "";
-                    m3.Text = "";
-                    m4.Text = "";
+                    m1.Text = "avocat";
+                    m2.Text = "orange";
+                    m3.Text = "Fraise";
+                    m4.Text = "Panacher";
                     m5.Text = "";
                     m6.Text = "";
                     m7.Text = "";

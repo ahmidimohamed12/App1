@@ -28,17 +28,17 @@
                 TextColor="Black"
                                     />
             <ScrollView Orientation="Vertical">
-             
+
                 <ListView SeparatorColor="Orange" x:Name="ls" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell Height="100" >
-                            
+
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
                                         <Label TextColor="White" Text="إسم الزبون" />
-                                     <Label TextColor="White" Text="{Binding  nomclient}" />
-                                  
+                                        <Label TextColor="White" Text="{Binding  nomclient}" />
+
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
                                         <Label TextColor="White" Text="إسم المطعم" />
@@ -54,7 +54,7 @@
                                         <Label TextColor="White" Text="العنوان" />
                                         <Label TextColor="White" Text="{Binding  addr}" />
 
-                                        
+
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
                                         <Label TextColor="White" Text="Resturant" />
@@ -66,23 +66,24 @@
                                         <Label TextColor="White" Text="{Binding  Datetime}" />
 
                                     </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="White" Text="Total" />
+                                        <Label TextColor="White" Text="{Binding  total}" />
+                                    </StackLayout>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-              
-            </ScrollView> 
+            </ScrollView>
             <Button
-                    Text="تأكيد"
-            x:Name="btvl"    
+                Text="تأكيد"
+                x:Name="btvl"    
                 BackgroundColor="Orange"
                 CornerRadius="20"
                 WidthRequest="180"
                 TextColor="Black"
-                
                     />
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

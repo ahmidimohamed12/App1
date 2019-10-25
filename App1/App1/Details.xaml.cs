@@ -48,9 +48,6 @@ namespace App1
             n++;
             b.Text = n.ToString();
             pr.Add(n);
-
-            
-
         }
         private  async void buttonval_click(object sender,EventArgs e)
         {

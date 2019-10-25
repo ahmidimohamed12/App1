@@ -30,7 +30,7 @@ namespace App1
 
                 await firebase
                   .Child("Resturant")
-                  .PostAsync(new Resturants() {nomclient=nom.Text,tele = numtele.Text,total = ,addr =add.Text,cmd=menustar.command,Datetime = DateTime.Now.ToShortTimeString(),name=MainPage.namerst });
+                  .PostAsync(new Resturants() {nomclient=nom.Text,tele = numtele.Text,total =Details.al,addr =add.Text,cmd=menustar.command,Datetime = DateTime.Now.ToShortTimeString(),name=MainPage.namerst });
          
 
         }

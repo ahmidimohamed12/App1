@@ -15,7 +15,7 @@ namespace App1.Models
         public string tele { get; set; }
 
         public string addr { get; set; }
-        public int total { get; set; }
+        public decimal total { get; set; }
         public string Datetime { get; set; }
     }
 }
