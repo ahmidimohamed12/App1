@@ -57,7 +57,7 @@ namespace App1
                 var mail = new MailMessage();
                 var smtpServer = new SmtpClient("smtp.gmail.com", 587);
                 mail.From = new MailAddress("ahmidinador123@gmail.com");
-                mail.To.Add("ahmidinador123@gmail.com");
+                mail.To.Add(passw.email);
                 mail.Subject = "Command";
                 mail.Body = t.ToString();
                 //   smtpServer.Credentials = new NetworkCredential(passw.email, passw.pass);
