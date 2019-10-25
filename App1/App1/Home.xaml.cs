@@ -17,7 +17,7 @@ namespace App1
             InitializeComponent();
             Device.StartTimer(TimeSpan.FromSeconds(3), () =>
             {
-                Navigation.PushModalAsync(new MainPage());
+                Navigation.PushModalAsync(new ville());
                 return false;
             });
 

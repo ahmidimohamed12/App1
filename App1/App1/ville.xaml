@@ -8,7 +8,15 @@
              x:Class="App1.ville">
     <ContentPage.Content>
         <StackLayout>
-            
+            <Image 
+                Source="dl.png"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                HeightRequest="50"
+                />
+            <Button Text="المدينة"  BackgroundColor="Orange" x:Name="bb"  TextColor="Black" HorizontalOptions="CenterAndExpand"  CornerRadius="20"  WidthRequest="280"/>
+            <BoxView/>
+            <Button  Text="التالي"  BackgroundColor="Black" x:Name="tt"   TextColor="White" HorizontalOptions="CenterAndExpand"  />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
