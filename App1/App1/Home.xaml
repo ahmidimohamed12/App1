@@ -8,13 +8,17 @@
              x:Class="App1.Home">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-                 <Image
+
+            <BoxView
+                HeightRequest="90"
+                />
+            <Image
                      HorizontalOptions="CenterAndExpand"
                 Source="dl.png"
                 WidthRequest="120"
                 HeightRequest="120"
                 />
-                <Label 
+            <Label 
                     Text="GERFAST"
                     HorizontalOptions="CenterAndExpand"
                     TextColor="White"

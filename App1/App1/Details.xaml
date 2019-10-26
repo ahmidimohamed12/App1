@@ -52,7 +52,6 @@
                         Text="المجموع"
                         />
                     <Label
-                        
                         HorizontalOptions="StartAndExpand"
                         FontAttributes="Bold"
                         TextColor="White"
@@ -95,7 +94,6 @@
 
                 </StackLayout>
             </StackLayout>
-            
             <Button
                 BackgroundColor="Orange"
                 CornerRadius="20"
