@@ -22,7 +22,6 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Label FontAttributes="Bold" Text="Command " TextColor="Black" />
                                     <Label Text="{Binding  name}"  FontAttributes="Bold" TextColor="Black" />
-
                                 </StackLayout>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Prix" FontAttributes="Bold" TextColor="Black" />

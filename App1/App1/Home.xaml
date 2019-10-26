@@ -9,9 +9,8 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
 
-            <BoxView
-                HeightRequest="90"
-                />
+            <StackLayout VerticalOptions="CenterAndExpand">
+                
             <Image
                      HorizontalOptions="CenterAndExpand"
                 Source="dl.png"
@@ -25,6 +24,8 @@
                     FontAttributes="Bold"
                     FontSize="23"
                     />
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
