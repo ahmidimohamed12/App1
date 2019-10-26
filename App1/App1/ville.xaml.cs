@@ -27,7 +27,7 @@ namespace App1
         }
         private  async void btn2_click(object sender,EventArgs e)
         {
-             action = await DisplayActionSheet("المرجو إختيار المدينة", "حسنا", null,"أولآاد تايمة");
+             action = await DisplayActionSheet("المرجو إختيار المدينة", null, null,"أولآاد تايمة");
             bb.Text = action.ToString();
         }
     }

@@ -7,14 +7,20 @@
              BackgroundColor="Black"
              x:Class="App1.Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Image
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
+        <StackLayout Orientation="Vertical">
+                 <Image
+                     HorizontalOptions="CenterAndExpand"
                 Source="dl.png"
                 WidthRequest="120"
                 HeightRequest="120"
                 />
+                <Label 
+                    Text="GERFAST"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="23"
+                    />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
