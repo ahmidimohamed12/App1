@@ -7,7 +7,6 @@ using App1.Models;
 using Firebase.Database;
 using Firebase.Database.Query;
 using System.Net;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Net.Mail;
