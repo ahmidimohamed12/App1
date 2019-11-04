@@ -22,13 +22,25 @@ namespace App1
 
         private async void btn1_click(object sender,EventArgs e)
         {
-            if(action.Length >= 4)
-                await  Navigation.PushModalAsync(new MainPage());
-        }
+            try
+            {
+                if (action.Length >= 4)
+                    await Navigation.PushModalAsync(new MainPage());
+            }catch(Exception)
+            {
+
+            }
+         }
         private  async void btn2_click(object sender,EventArgs e)
         {
-             action = await DisplayActionSheet("المرجو إختيار المدينة", null, null,"أولآاد تايمة");
-            bb.Text = action.ToString();
+            try
+            {
+                action = await DisplayActionSheet("المرجو إختيار المدينة", null, null, "أولآاد تايمة");
+                bb.Text = action.ToString();
+            }catch(Exception)
+            {
+
+            }
         }
     }
 }
