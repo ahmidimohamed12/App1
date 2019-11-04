@@ -24,10 +24,6 @@ namespace App1
         }
         private async void  valid(object sender,EventArgs e)
         {
-                //int t;
-                //t = (from a in  MainPage.res
-                //        select a.cmd.prix).Max();
-
                 await firebase
                   .Child("Resturant")
                   .PostAsync(new Resturants() {nomclient=nom.Text,tele = numtele.Text,total =Details.al,addr =add.Text,cmd=menustar.command,Datetime = DateTime.Now.ToShortTimeString(),name=MainPage.namerst });
