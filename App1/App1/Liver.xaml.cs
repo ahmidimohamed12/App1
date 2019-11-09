@@ -114,7 +114,6 @@ namespace App1
             {
                 await DisplayAlert("Success", "No Person Available", "OK");
             }
-
         }
 
         private async void btnadd_Clicked(object sender, SelectedItemChangedEventArgs e)
