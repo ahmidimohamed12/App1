@@ -8,21 +8,18 @@
              x:Class="App1.Validation">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" >
-                <Image
-                    HorizontalOptions="CenterAndExpand"
-                    
-                    />
-            </StackLayout>
+            <BoxView
+                HeightRequest="50"
+                />
             <Image
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
                     Source="png.png"
                 />
             <Label
                 Text="شكرا لكم"
                 FontSize="23"
                 TextColor="White"
+                HorizontalOptions="CenterAndExpand"
                 FontAttributes="Bold"
                 />
         </StackLayout>

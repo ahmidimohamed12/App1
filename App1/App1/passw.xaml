@@ -18,9 +18,9 @@
             <BoxView
                 HeightRequest="45"
                 />
-            <ic:IconEntry    HorizontalTextAlignment="Center"   HorizontalOptions="CenterAndExpand" PlaceholderColor="White" Placeholder="البريد الإلكتروني"  x:Name="txtemail" WidthRequest="240" />
+            <ic:IconEntry  BackgroundColor="White"   HorizontalTextAlignment="Center"   HorizontalOptions="CenterAndExpand" PlaceholderColor="Black" Placeholder="البريد الإلكتروني"  x:Name="txtemail" WidthRequest="240" />
             <BoxView HeightRequest="25"/>
-            <ic:IconEntry IsPassword="True" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  Placeholder="الرقم السري" x:Name="txtpas"  WidthRequest="240"/>
+            <ic:IconEntry IsPassword="True" BackgroundColor="White" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  Placeholder="الرقم السري" x:Name="txtpas"  PlaceholderColor="Black" WidthRequest="240"/>
             <BoxView   HeightRequest="40"/>
             <Button
                 HorizontalOptions="CenterAndExpand"
@@ -31,7 +31,6 @@
                 TextColor="Black"
                 WidthRequest="190"
                 />
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

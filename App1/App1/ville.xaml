@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="App1.ville">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout  >
             <Image
                 Source="dl.png"
                 HorizontalOptions="CenterAndExpand"
